@@ -17,6 +17,7 @@ export interface Person {
   roles: string[];
   period: string;
   region: string;
+  image: string;
   /** Годы жизни; `variants` заполняется, если в источниках есть разночтения. */
   life: { label: string; variants?: string };
   summary: string;

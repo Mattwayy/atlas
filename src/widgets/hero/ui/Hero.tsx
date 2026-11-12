@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button, Container } from '@/shared/ui';
-import { persons, Silhouette } from '@/entities/person';
+import { persons  } from '@/entities/person';
 import s from './Hero.module.css';
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
           {persons.map((p, i) => (
             <li key={p.id} data-person={p.id} data-aos="fade-left" data-aos-delay={i * 150}>
               <Link href={`/persons/${p.slug}`} className={s.person}>
-                <Silhouette personId={p.id} caption={false} />
+                <img src={p.image} alt={p.name} />
                 <span className={s.personName}>{p.name}</span>
                 <span className={s.personRole}>{p.subtitle}</span>
               </Link>

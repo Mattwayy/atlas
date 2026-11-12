@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Container, Badge, Note } from '@/shared/ui';
-import { Silhouette, type Person } from '@/entities/person';
+import { type Person } from '@/entities/person';
 import { SourceRefs } from '@/entities/source';
 import s from './PersonProfile.module.css';
 
@@ -27,7 +27,7 @@ export function PersonProfileHead({ person }: { person: Person }) {
           </ul>
         </div>
         <div className={s.portrait} data-aos="zoom-in">
-          <Silhouette personId={person.id} />
+          <img src={person.image} alt={person.name} />
         </div>
       </Container>
     </section>

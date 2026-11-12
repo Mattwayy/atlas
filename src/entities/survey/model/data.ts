@@ -5,7 +5,7 @@
  */
 export const survey = {
   sampleSize: 25,
-  audience: 'учащиеся 8–9 классов',
+  audience: 'учащиеся 9 классов',
   workTime: '15 минут работы с атласом',
   before: {
     label: 'До знакомства с атласом: назвали имя',

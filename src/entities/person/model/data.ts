@@ -6,6 +6,7 @@ export const persons: Person[] = [
     slug: 'sultanmamet',
     name: 'Султанмамет султан',
     subtitle: 'правитель, дипломат и батыр',
+    image: '../static/atlas1.jpg',
     fullName: 'Султанухаммед',
     roles: ['Правитель', 'Военачальник', 'Дипломат', 'Батыр'],
     period: 'XVIII век',
@@ -61,6 +62,7 @@ export const persons: Person[] = [
     roles: ['Караван-вожатый', 'Администратор', 'Дипломат', 'Сардар'],
     period: 'XIX век',
     region: 'Род шомекей, Младший жуз; Иргизский край',
+    image: '../static/atlas2.jpg',
     life: {
       label: '1804/1805 — 1892/1897',
       variants: 'Даты рождения и смерти приводятся в вариантах.',
