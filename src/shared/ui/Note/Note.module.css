@@ -1,0 +1,14 @@
+.note {
+  border-left: 4px solid var(--copper);
+  background: rgba(176, 112, 47, 0.1);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.title {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--copper-d);
+}

@@ -1,0 +1,19 @@
+.sources {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  max-width: 820px;
+}
+
+.next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding-block: 40px 56px;
+}
+
+.next p {
+  margin: 0;
+  font-weight: 600;
+}

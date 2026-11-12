@@ -1,0 +1,67 @@
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 14px 18px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.table thead th {
+  color: #fff;
+  background: var(--navy);
+}
+
+.table thead th[data-person] {
+  background: var(--accent);
+}
+
+.table tbody th {
+  width: 22%;
+  background: var(--sand);
+  font-weight: 600;
+}
+
+.cards {
+  display: none;
+}
+
+.card {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.card h3 {
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0 0 8px;
+  padding-left: 10px;
+  border-left: 4px solid var(--accent);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .scroll {
+    display: none;
+  }
+  .cards {
+    display: block;
+  }
+}

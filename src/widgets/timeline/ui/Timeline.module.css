@@ -1,0 +1,131 @@
+.filter {
+  margin-bottom: 28px;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* центральная линия */
+.list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--line);
+  transform: translateX(-1px);
+}
+
+.century {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.century span {
+  padding: 4px 18px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #f3ead3;
+  font-family: var(--font-head), Georgia, serif;
+  font-weight: 700;
+}
+
+.item {
+  position: relative;
+  width: calc(50% - 32px);
+}
+
+.item[data-side='right'] {
+  align-self: flex-end;
+}
+
+/* точка на линии */
+.item::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--sand);
+}
+
+.item[data-side='left']::after {
+  right: -39px;
+}
+
+.item[data-side='right']::after {
+  left: -39px;
+}
+
+.more {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+/* режим одной персоны: одна колонка слева с линией слева */
+.single {
+  gap: 16px;
+}
+
+.single::before {
+  left: 7px;
+}
+
+.single .century {
+  justify-content: flex-start;
+  padding-left: 32px;
+}
+
+.single .item,
+.single .item[data-side='right'] {
+  width: 100%;
+  align-self: stretch;
+  padding-left: 32px;
+}
+
+.single .item::after,
+.single .item[data-side='left']::after,
+.single .item[data-side='right']::after {
+  left: 0;
+  right: auto;
+  border-color: var(--paper);
+}
+
+@media (max-width: 800px) {
+  .list::before {
+    left: 7px;
+  }
+
+  .century {
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+
+  .item,
+  .item[data-side='right'] {
+    width: 100%;
+    align-self: stretch;
+    padding-left: 32px;
+  }
+
+  .item::after,
+  .item[data-side='left']::after,
+  .item[data-side='right']::after {
+    left: 0;
+    right: auto;
+  }
+}

@@ -1,0 +1,54 @@
+.section {
+  padding-block: 72px;
+}
+
+.paper {
+  background: var(--paper);
+}
+
+.sand {
+  background: var(--sand);
+}
+
+.dark {
+  background: var(--navy);
+  color: #f3ead3;
+}
+
+.head {
+  max-width: 720px;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper-d);
+  font-weight: 600;
+}
+
+.dark .eyebrow {
+  color: #e0a468;
+}
+
+.title {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  margin: 0 0 12px;
+}
+
+.lead {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+}
+
+.dark .lead {
+  color: #d7cdb3;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: 52px;
+  }
+}

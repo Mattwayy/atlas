@@ -1,0 +1,50 @@
+.toolbar {
+  margin-bottom: 16px;
+}
+
+.legend {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.legendList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.legendList li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.line {
+  width: 28px;
+  border-top: 4px dashed var(--ink-soft);
+}
+
+.region {
+  width: 22px;
+  height: 14px;
+  border: 2px dashed var(--ink-soft);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.compact {
+  margin-top: 8px;
+}

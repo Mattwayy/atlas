@@ -1,0 +1,40 @@
+.group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--sand);
+  border: 1px solid var(--line);
+}
+
+.option {
+  min-height: 40px;
+  padding: 6px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .option {
+    padding: 6px 6px;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+}
+
+.active {
+  background: var(--accent, var(--navy));
+  color: #fff;
+}

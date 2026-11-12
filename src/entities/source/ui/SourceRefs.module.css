@@ -1,0 +1,32 @@
+.refs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.label {
+  font-weight: 600;
+}
+
+.chip {
+  padding: 0 8px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #fff;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  color: var(--copper-d);
+}
+
+.chip:hover {
+  background: var(--sand);
+}
+
+.none,
+.note {
+  font-style: italic;
+}

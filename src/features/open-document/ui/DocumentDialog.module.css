@@ -1,0 +1,18 @@
+.meta {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.h {
+  margin: 18px 0 6px;
+  font-size: 1rem;
+}
+
+.quote {
+  margin: 0 0 12px;
+  padding: 4px 0 4px 16px;
+  border-left: 4px solid var(--accent);
+  font-family: var(--font-head), Georgia, serif;
+  font-size: 1.05rem;
+}

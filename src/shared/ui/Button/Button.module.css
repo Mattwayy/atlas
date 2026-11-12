@@ -1,0 +1,46 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s, transform 0.18s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  background: var(--copper);
+  color: #fff;
+}
+.primary:hover {
+  background: var(--copper-d);
+}
+
+.ghost {
+  border-color: var(--navy);
+  color: var(--navy);
+  background: transparent;
+}
+.ghost:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+  background: transparent;
+}
+.light:hover {
+  background: rgba(255, 255, 255, 0.14);
+}

@@ -1,0 +1,28 @@
+{
+  "name": "forgotten-names-kz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Интерактивный историко-биографический атлас «Забытые имена Казахстана»",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "leaflet": "^1.9.4",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/leaflet": "^1.9.20",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}

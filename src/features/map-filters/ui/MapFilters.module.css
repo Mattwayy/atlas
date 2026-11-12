@@ -1,0 +1,49 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--dot, var(--ink-soft));
+  background: transparent;
+}
+
+.chip[data-layer='sultanmamet'] {
+  --dot: var(--c-sultan);
+}
+.chip[data-layer='almat'] {
+  --dot: var(--c-almat);
+}
+.chip[data-layer='routes'],
+.chip[data-layer='areas'] {
+  --dot: var(--ink-soft);
+}
+
+.on {
+  background: #fff;
+  border-color: var(--dot);
+}
+
+.on .dot {
+  background: var(--dot);
+}

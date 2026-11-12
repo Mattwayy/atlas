@@ -1,0 +1,19 @@
+.skeleton {
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  background: linear-gradient(100deg, #e9dfc4 30%, #f3ead3 50%, #e9dfc4 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}

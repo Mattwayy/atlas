@@ -1,0 +1,18 @@
+.item {
+  display: grid;
+  grid-template-columns: 2.6em 1fr;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+.item:target {
+  background: rgba(176, 112, 47, 0.12);
+}
+
+.num {
+  font-weight: 700;
+  color: var(--copper-d);
+  font-variant-numeric: tabular-nums;
+}

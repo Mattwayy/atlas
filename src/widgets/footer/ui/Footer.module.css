@@ -1,0 +1,46 @@
+.footer {
+  padding-block: 48px;
+  background: #141f31;
+  color: #d9cfb5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+}
+
+.brand {
+  margin: 0 0 4px;
+  font-family: var(--font-head), Georgia, serif;
+  font-size: 1.3rem;
+  color: #f3ead3;
+}
+
+.muted {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+  color: #b9ae93;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
